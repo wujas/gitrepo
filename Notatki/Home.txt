@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-12T12:20:58+01:00
+
+====== Home ======
+Created piątek 12 styczeń 2018
+
+$("selektor"  lub 'selektor').akcja(function) {
+działania; }
+
+W JQuery piewrszym sposobem selekcji jest sposobaselekcji z identyfikatorem
+#("login") -
+
+===== Dołączenie jQuery do srony =====
