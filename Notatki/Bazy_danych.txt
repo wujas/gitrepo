@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-22T09:59:55+01:00
+
+====== Bazy danych ======
+Created poniedziałek 22 styczeń 2018
+
+Język SQL – strukturalny język zapytań stosowany w bazach danych
+
+**Porgamy**
+Microsofc acces	(.accdb)
+[[LibreOffice]] Base (.odt)
+[[SQLiteStudio]] (.db, .sqlite)
+
+**Relacyjna baza danych** składa sie z wielu tabel połączonych tabelami
+
+**Systemy/Silniki danych**
+[[MySQL]]
+[[MariaDB]]
+[[PostgreSQL]]
+Oracle
+SQLite
+
+Typy danych 
+
+Liczbowe
+intqer – liczby całkowite
+float lub real ¸liczby zmoennoprzecinkowe
+
+Data i czas
+
+Date – data, np. w formacie ISO, np. 2015-01-16
+[[DataTime]] – data i czas
