@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-26T12:07:44+01:00
+
+====== j5js ======
+Created piątek 26 styczeń 2018
+
+|------------------------------------------>X
+|
+|
+|                        (x, y)
+|
+|
+|
+
+html5 canvas – słuzy do obsługi grafiki na stronie
+kształ(x, y, weight, height) 
