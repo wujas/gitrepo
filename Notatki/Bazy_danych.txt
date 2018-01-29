@@ -7,27 +7,33 @@ Created poniedziałek 22 styczeń 2018
 
 Język SQL – strukturalny język zapytań stosowany w bazach danych
 
-**Porgamy**
+====== Porgamy ======
 Microsofc acces	(.accdb)
 [[LibreOffice]] Base (.odt)
 [[SQLiteStudio]] (.db, .sqlite)
 
-**Relacyjna baza danych** składa sie z wielu tabel połączonych tabelami
+**Relacyjna baza danych** – składa sie z wielu tabel połączonych tabelami
+**klucz główny (ang primary key)** – pole którego wartosć jest unikalna w obrębie tabeli, tzn ze klucz główny jednoznacznie identyfikuje rekord tabeli
+**klucz obcy (and. secondary key, REFERENCES table_name)** – klucz obcy pobiera wartości z klucza głównego, łączy tabele zależne z tabelą główną
 
-**Systemy/Silniki danych**
+====== Typy relacji ======
+
+
+
+====== Systemy/Silniki danych ======
 [[MySQL]]
 [[MariaDB]]
 [[PostgreSQL]]
 Oracle
 SQLite
 
-Typy danych 
+====== Typy danych ======
 
 Liczbowe
 intqer – liczby całkowite
 float lub real ¸liczby zmoennoprzecinkowe
 
-Data i czas
+====== Data i czas ======
 
 Date – data, np. w formacie ISO, np. 2015-01-16
 [[DataTime]] – data i czas
