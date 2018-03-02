@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-02T12:12:16+01:00
+
+====== BT4 BOOTSTRAP ======
+Created piątek 02 marzec 2018
+
+Twórcy podzielili wszytkie urzadzmoea ma 5 kategorii
+Extra small
+<576px 	Extra small
+≥576px 	Small
+≥768px 	Medium
+≥992px 	Large
+≥1200px	Extra large
+
+
+====== Spacing na stronie getbootstrapx ======
