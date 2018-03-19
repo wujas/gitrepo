@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-19T09:54:07+01:00
+
+====== Grafika komputerowa ======
+Created poniedziałek 19 marzec 2018
+
+0x(Po tym kod szestanastkowy) ⇒ 0xFFFFFF
+Pzesrrzen kolorów
+Przedstawiajac rozne systemy defniiponwania pos
+Grafika rastowa – prozentazja obrazu za pomoca pionowa–poziomej sitako odpowiedznio kolorowamucj pikseli na monitorze komputera
