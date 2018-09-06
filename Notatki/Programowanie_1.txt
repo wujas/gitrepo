@@ -1,0 +1,88 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-06T08:07:44+02:00
+
+====== Programowanie 1 ======
+Created czwartek 06 września 2018
+
+Programowanie – mównieni maszynie co ma robić i w jakiej kolejności
+Maszyna zrozumie tylko kod binarny (kod 0-1, jest napiecie albo nie ma)
+
+==== Jezyk programowania niskiego poziomu: ====
+asemblery(najszybszy program programowania) – pierwszy program do pisania programu
+mov exc, 50
+dec ecx
+push eax
+pop eax
+or ecx, eax
+
+==== Języl programowania wysokiego poziomu: ====
+if (liczba_pkt > 50)
+	zaliczenie=true
+else
+	zaniczenie=false
+Używają prostych komend typu print, else, if itp.
+Tłumaczą kod na język maszynowy(kod binarny)
+
+==== Historia języków programowania: ====
+
+Ważne języki programowania:
+C (1971) → C++(1983) oba używane współcześnie(jedne z najczęsciej używanych)
+Pascal(1970) był uzywany do nauki progrmowania, jednak w tym momencie jest zastąpiony przez python'a.
+
+==== Od kodu do programu: ====
+Napisany przez programistę kod poddawany jest komplikacji. Po sprawdzeniu poprawności kodu kompilator przekształca go na kod maszynowy. Następnie linker łączy z kodem potrzebne jego działana bibliotrko i tworzy plik indywidualny aplikacji. Rozszerzenie .exe jest umowne i charakterystyczne dla systemu Windows.
+
+
+**if (liczba_pkt > 50)                                                          |  dodatkowe moduły i biblioteki → **
+	**zaliczenie=true																→ linker(konsolidacja) → program.exe (działajaąca aplikacja)**
+**else					→ Kompilator → 010101010101010011100(kod binarny) → **
+**	zaniczenie=false**
+
+kompilowanie (linkowanie) działa tylko na tym urządzeniu na którym to robiliśmy (np. program tworzony w linuxie nie zadziala na windowie poniewaz maja rózne biblioteki)
+
+kod źródłowy jest interpretowany (python, java) muszą być przetworzone przez interpretery (cashowanie róznego rodzaju)
+
+
+==== Jak powstaje program: ====
+Algorytm jest skonczonym ciągiem czynnosci, przekształcający zbiór danych wejściowych na zbiór danych wyjściowych. Dzielimy je na:
+Algorytmy numeryczne – wykonują działania matematyczne na danych liczbowych
+Algorytmysekwencyjne albo inaczej liniowe – ich kolejność jest zawsze taka sama i niezalezna od wartosci danych wejściowych
+
+
+Zadania programu				Algorytm
+1.obliczenie pola        			1.pobierz promień
+2.obliczenie objętości			2.oblicz pole				
+3. ... 							3. wyświetl pole
+																4. ...
+
+
+
+==== Elementy schematu blokowego: ====
+									→ Tak
+Start → x = 10 → Wypisz x → x = 100	→ STOP 		(Schemat będzie się zapetlał dopuki zmienna x nie bedzie wynosiła w tym przypadku 10)
+									→ Nie
+
+Blok graniczny → blok operacyjny → Blok wyjscia/wejscia → blok decyzyjny → blok graniczny
+Początek algorytmu → operacje zmieniejace wartosci zmiennych → operazje wprowadzania i wyprowadzania danych → wybór jednej z dwóch mozliwych dróg działania → koniec algorytmu 
+
+==== Sposób zapisu algorytmu: ====
+
+Lista kroków:
+1. pobierz dane promienia
+2. oblicz wartosc pola
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

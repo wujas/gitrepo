@@ -27,10 +27,10 @@ Port – liczba natur;lna identgikująca usługę na serwerze, well known ports 
 python -m SimpleHTTPServer
 python3 -m http.server
 
-php -S [[loaclhost:8000]]
+php -S loaclhost:8000
 
 Domyślny nazwa serwera: port
-[[localhost:8000]]
+localhost:8000
 127.0.0.1:8000
 
 
