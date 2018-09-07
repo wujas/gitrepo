@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-07T13:43:41+02:00
+
+====== CPP / Algorytmika ======
+Created piątek 07 września 2018
+
+Biblioteka standardowa
+
+TYP			Typowy rozmiar w bajtach		Zakres
+char			1								-128 ... 127
+int				2, 4 lub 8 						-32 768 ... 32767
+longint			4 								- 2 147 483 648 ...  2 147 483 647
+float			4								- 6 cyfr znaczących 3,4E38 ... 3,4E38
+double			8								-10 cyfr znaczyących -
