@@ -9,7 +9,7 @@ def main(args):
     liczba2 = int(input("Podaj wartosć końcową: "))
     
     while liczba >= liczba2:
-        stop = int(input("Błęsny zakres. Podaj inny:")
+        stop = int(input("Błędny zakres. Podaj inny:"))
     
     if liczba >= liczba2:
         print("Błędny zakres")
