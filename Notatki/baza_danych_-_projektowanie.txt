@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-24T07:22:03+02:00
+
+====== baza danych - projektowanie ======
+Created poniedziałek 24 września 2018
+
+–Danie nie powinny sie powtarzać
+–Nie upychać do jednej kolumny wielu wartości (koluny nie powinny zawierać kolekcji różnych wartości [jedna kolumna - jedna informacja])
+
+
+=== Normalizacja ===
+–to bezstratny proces organizowania danych w tabelach majacy na celu zmniejszenie ilosci danych składowych w bazie oraz wyeliminowanie potencjalnych anomalii opisanych powyżej.
+
+Przebiega ona w trzech krokach:
+–1NF – mowi o atomowości danych – Kazde pole przechowuje jedna informacje, dzięki czemu możemy dokonywać efektywnych zapytań. Wprowadza także pojecie istnienia klucza głównego identyfikującego bezpośrednio każdy wiersz – unikat.
+–2NF – dąży do tego aby każda tabela powinna przechowywac dane dotyczące tylko konkretnej klasy obiektów.
+–3NF –wyzucic pola z bazy które nie są potrzebne
