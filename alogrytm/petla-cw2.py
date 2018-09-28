@@ -7,11 +7,11 @@
 
 def main(args):
     
-    n = int(input("Podaj liczbę początkową zakresu: "))
-    m = int(input("Podaj liczbę końcową zakresu: "))
+    start = int(input("Podaj liczbę początkową zakresu: "))
+    stop = int(input("Podaj liczbę końcową zakresu: "))
     
 
-    for liczba in range(n, m + 1):
+    for liczba in range(start, stop + 1):
         print(liczba, end = " ")  
     
     return 0

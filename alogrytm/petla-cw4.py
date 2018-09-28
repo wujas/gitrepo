@@ -11,9 +11,9 @@
 
 def main(args): 
 
-	for liczba in range(10, 100): 
-		if liczba % 2 ==0 and liczba % 3 == 0: 
-			print (liczba) 
+    for liczba in range(10, 100): 
+        if liczba % 2 ==0 and liczba % 3 == 0: 
+            print (liczba) 
  
 
 if __name__ == '__main__': 
