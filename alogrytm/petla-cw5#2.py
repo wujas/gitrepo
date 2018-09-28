@@ -11,7 +11,6 @@
 # program konczy dzialanie po wprowadzeniu wartosci 0
 
 
-
 def main(args):
     
     suma = 0
@@ -20,9 +19,11 @@ def main(args):
     while liczba != 0:
         liczba = int(input("Podaj liczbę: "))    
         while liczba < 0: #pętla zaporowa
-            liczba = int(input("Błędne dane! Podaj liczbę: "))
-    suma += liczba
-
+            liczba = int(input("Błędne dane!" , end=''))
+        else:
+            suma += liczba
+    
+    print("Suma: ", suma)
     return 0
 
 if __name__ == '__main__':
