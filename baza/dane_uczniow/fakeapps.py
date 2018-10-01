@@ -32,11 +32,11 @@ def main(args):
         'INSERT INTO nazwiska VALUES(?, ?, ?, ?)', dane)
 
     # dodawanie danych do bazy
-    dane = dane_z_pliku('dane_subscriptions.txt')
+    dane = dane_z_pliku('dane_osobowe.txt')
     print(dane)
     dane.pop(0)  # usuwanie pierwszego elementu listy
     cur.executemany(
-        'INSERT INTO tbSubscriptions VALUES(?, ?, ?, ?)', dane)
+        'INSERT INTO dane_osobowe VALUES(?, ?, ?, ?, ?)', dane)
     
     # dodawanie danych do bazy
     dane = dane_z_pliku('dane_orders.txt')

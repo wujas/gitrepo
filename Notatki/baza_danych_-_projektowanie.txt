@@ -16,3 +16,44 @@ Przebiega ona w trzech krokach:
 –1NF – mowi o atomowości danych – Kazde pole przechowuje jedna informacje, dzięki czemu możemy dokonywać efektywnych zapytań. Wprowadza także pojecie istnienia klucza głównego identyfikującego bezpośrednio każdy wiersz – unikat.
 –2NF – dąży do tego aby każda tabela powinna przechowywac dane dotyczące tylko konkretnej klasy obiektów.
 –3NF –wyzucic pola z bazy które nie są potrzebne
+
+
+====== Constrains – więzy integralności(spójności) ======
+
+id INTEGER PRIMARY KEY AUTONIMERIC
+UNIQUE – unikalność wartości w kolumnie
+NOT NULL
+FOREIGN KEY – definicja klucza obcego
+pole REFERENCES tabela(inne_pole)
+CHECK num1 > num2 – tekstowanie wartości
+DEAFULT – wartość domyślna
+
+ON DELETE CASCADE – 
+Razem z wierszem tabeli nadrzędnej zostaną usunięte wszytkie wiersze tabeli podrzędnej, w których wartości klucza obcego wskazują na usuwany wiersz (pod warunkiem, że usinięcie tych wierszy jest możliwe bez naruszenia innych więzów referencyjnych).
+
+ON DELETE SET NULL / SET DEAFULT
+
+====== DataTypes ======
+
+CHAR(20) "zxcvbnmqwe          "
+VARCHAR(20) ' zaqwsxcde'
+KODOWANIE = UTF-8
+
+BOOLEAN (0 – FALSE, 1 – TRUE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
