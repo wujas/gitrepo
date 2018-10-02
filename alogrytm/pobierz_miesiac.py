@@ -1,20 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  petla-cw5#2.py
+#  suma-cyfr.py
 #  
-#
-
 
 def main(args):
-    
-    nazwy = ['', 'styczen', 'luty', 'marzec', '' ]
-    
-    a = int(input("Podaj numer miesiąca: "))
-    
-    for miesiac
-    
-    return 0
+	
+	liczba = int(input("Podaj liczbę: "))
+	
+	cyfry = list(map(int, str(liczba)))
+
+	print ("Suma cyfr liczby:", sum(cyfry))
+
+	return 0
 
 if __name__ == '__main__':
     import sys
