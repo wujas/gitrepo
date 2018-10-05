@@ -4,6 +4,34 @@
 #  figury.py
 #  
 
+
+
+
+def choinka(h, znak):
+
+
+    h = int(input("Podaj wysokość choinki: "))
+    znak = str(input("Podaj znak, którym chcesz rysować: "))
+    
+    for i in range(h):
+        for j in range(i + 1):
+            print(znak, end = '')
+        print()
+        
+    return 0
+def choinka2(h, znak):
+
+
+    h = int(input("Podaj wysokość choinki: "))
+    znak = str(input("Podaj znak, którym chcesz rysować: "))
+    
+    for i in range(h):
+        for j in range(h - i):
+            print(znak, end = '')
+        print()
+        
+    return 0
+        
 def prostokat1(a, b, znak):
     
     a = int(input("Podaj długość boku a: "))
@@ -25,8 +53,8 @@ def prostokat1(a, b, znak):
         
 
 
-def main(args):
-    
+
+def tro(a, b, znak):
     a = int(input("Podaj długość boku a: "))
     b = int(input("Podaj długość boku b: "))    
     znak = str(input("Podaj znak budujący prostokąt: "))    
@@ -41,8 +69,25 @@ def main(args):
         print()
     
     
+def trojkat(h, znak)
+    
+    h = int(input("Podaj wysokość choinki: "))
+    znak = str(input("Podaj znak, którym chcesz rysować: "))
+    
+    for i in range(h):
+        for j in range(h - i):
+            print(znak, end = '')
+        print()
+        
     return 0
-
+    
+    
+def main(args):
+    h, znak = 6, "#"
+    trojkat(h, znak)
+    print()
+    
+    return 0
 
 if __name__ == '__main__':
     import sys

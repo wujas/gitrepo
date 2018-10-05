@@ -23,7 +23,9 @@ def main(args):
             else:
                 print(znak, end = '')
     
-print()
+        print()
+    
+    return 0
 
 
 if __name__ == '__main__':
