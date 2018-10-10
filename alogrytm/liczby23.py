@@ -6,33 +6,38 @@
 
 def liczby2():
     """
-    Funkcja drukuje wszystkie liczby 2 cyfrowe
-    w których cyfry nie powrarzają się. Funkcja zwraca
-    ich liczbę. Wykluczone liczby 11, 22, 33, itd.
+    Funkcja drukuje wszystkie liczby 2 cyfrowe 
+    w ktorych cyfry nie powtarzaja sie. Funkcja zwraca ich liczbę.
+    Wykluczone liczby 11 
     """
+    licznik=0
+    for i in range(1,10):
+        for j in range(10):
+            if i!=j:
+                print(i*10+j, end=" ")
+                licznik+=1
+                
+    print()
+    return licznik
+            
     
-    
-    i = 0
-    j = 0
-    
-    ile = 0 # licznik
-    
-    for i in range(1,10): # pętla zewnetrzna
-        for j in range(0, 10): # pętla wewnetrzna
-            if i != j:
-                print("{}{}  ".format(i, j), end='')
-                ile = ile + 1
-        
-    return 0
+def liczby3():
+    licznik=0
+    for i in range(1, 10):
+        for j in range(10):
+            for k in range(10):
+                if i!=j and j!=k and i!=k:
+                    print(i*100+j*10+k,end=" ")
+                    licznik+=1
+    print()
+    return licznik
     
     
 
 def main(args):
     print("Liczb 2-cyfrowych: ", liczby2())
-
-    
+    print("Liczb 3 cyfrowych", liczby3())
     return 0
-
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
