@@ -3,39 +3,45 @@
  */
 
 
+
 #include <iostream>
+
 using namespace std;
 
-
-
-void prostokat(a, b, znak) {
-    
-    for (int i= 0; i < a; i++) {
-        for (int j = 0; j < b; j++) {
-                cout << i *a << j << " ";
-        }
-    
+void prostokat(int x, int y, char z) 
+{
+    for (int i = 0; i < x; i++){
+        for (int j = 0; j < y; j++)
+            if (j == 0 || j == y-1 || i == 0 || i == x-1)
+                cout << z;
+            else
+                cout << " ";
+        cout << endl;
+    }
 }
 
 int main(int argc, char **argv)
 {
+	int a, b;  //deklaracja
+    a = b = 0;  //inicjacja
     
-    
-    
-    int a, b; // deklaracja 
-    a = b = 0; // inicjacja 
-    //int a = 0; // definicja 
-    cout << "Podaj zakres 1: ";
+    cout << "Podaj długość boku a: ";
     cin >> a;
-    cout << "Podaj zakres 2: ";
-    cin >> b;
         
-    char znak;
-    cout << "Podaj znak: ";
-    cin >> znak
+    cout << "Podaj długość boku b: ";
+    cin >> b;
     
-    return 0;
-
+    char znak;
+    
+    cout << "Podaj znak, którym chcesz rysować: ";
+    cin >> znak;
+    
+    prostokat(a, b, znak);
+    
+    /* 
+     * cout << "Podaj długości boków prostokąta: ";
+     * cin >> a >> b
+     */
+    
 	return 0;
 }
-
