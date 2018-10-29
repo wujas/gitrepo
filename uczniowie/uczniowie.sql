@@ -36,6 +36,6 @@ CREATE TABLE oceny(
     id_uczen INTEGER NOT NULL,
     id_przedmiot INTEGER NOT NULL,
     ocena DECIMAL NOT NULL,
-    FOREIGN KEY (id_uczen) REFERENCES uczniowie(id)
+    FOREIGN KEY (id_uczen) REFERENCES uczniowie(id),
     FOREIGN KEY (id_przedmiot) REFERENCES przedmioty(id)
 );
