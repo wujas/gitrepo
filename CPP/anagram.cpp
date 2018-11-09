@@ -18,7 +18,7 @@ int main(int argc, char **argv)
             if (i1 == i2) continue;
                 for(i3 = 0; i3 < r; i3++){
                     for(i4 = 0; i4 < r; i4++){
-                        if (i3 == i4) continue;
+                        if (i3 == i4 || i1 == i3 || i2 == i3 || i2 == i4 || i1 == i4) continue;
                             cout << i1 << i2 << i3 << i4 << endl;
                     }
                 }
