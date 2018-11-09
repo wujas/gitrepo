@@ -76,13 +76,9 @@ void ascii(char tb[], int roz){
     }
 }
 
-void odwroc(char[tb], int roz) {
-    int kod = 0;
-    for(int i = 0; i < roz; i++) {
-    
-    
-    
-    }
+void odwroc(char tb[], int roz) {
+    for(int i = roz-1; i >= 0; i--)
+        cout << tb[i] << " ";
     
     
 }
