@@ -5,8 +5,9 @@
 import os
 from peewee import *
 
+baza_plik = 'test_orm.db'
 ############ MODEL
-baza = SqliteDatabase()
+baza = SqliteDatabase(baza_plik)
 class BazaModel(Model):
     class Meta:
         database = baza
@@ -15,8 +16,8 @@ class BazaModel(Model):
 
 class Klasa(BazaModel):
     nazwa = CharField(null=False)
-    roknaboru = IntegerField(deafult=0)
-    rokmatury = IntegerField(deafult=0)
+    roknaboru = IntegerField(default=0)
+    rokmatury = IntegerField(default=0)
 
 class Uczen(BazaModel):
     imie = CharField(null=False)
@@ -25,16 +26,41 @@ class Uczen(BazaModel):
     klasa = ForeignKeyField(Klasa, related_name='uczniowie')
     
 class Wynik(BazaModel):
-    egz_hum = DecimalField(deafult=0)
-    egz_mat = DecimalField(deafult=0)
-    egz_jez = DecimalField(deafult=0)
+    egz_hum = DecimalField(default=0)
+    egz_mat = DecimalField(default=0)
+    egz_jez = DecimalField(default=0)
     klasa = ForeignKeyField(Uczen, related_name='wyniki')
     
 def main(args):
-    baza_plik = 'test_orm.db'
-    if os path.exists(baza_plik):
+    if os.path.exists(baza_plik):
         os.remove(baza_plik)
+    baza.connect()
+    baza.create_tables([Klasa, Uczen, Wynik])
     
+    kl1 = Klasa(nazwa='2A', roknaboru=2012, rokmatury=2015)
+    kl1.save()
+    kl2 = Klasa(nazwa='1A', roknaboru=2013, rokmatury=2016)
+    kl2.save()
+    kl3 = Klasa(nazwa='2A', roknaboru=2011, rokmatury=2014)
+    kl3.save()
+    
+    # kl2a = Klasa.select().where(Klasa.nazwa=='2A').get()
+    
+    # ~u1 = Uczen(imie='Jan', nazwisko='Kowalski', plec=False, klasa=kl1) # Lub kl2a ^
+    # ~u1.save()
+    # ~u2 = Uczen(imie='Julia', nazwisko='Debowsi', plec=True, klasa=kl2)
+    # ~u2.save()
+    # ~u3 = Uczen(imie='Dawid', nazwisko='Rozmysl', plec=False, klasa=kl3)
+    # ~u3.save()
+    
+    # ~uczniowie = Uczen.select()
+    # ~for uczen in uczniowie:
+        # ~print(uczen.id, uczen.imie, uczen.nazwisko)
+    # ~klasa = Klasa.select()
+    # ~for klasa in Klasa:
+        # ~print(klasa.id, klasa.nazwa, klasa.roknaboru, klasa.rokmatury)
+    
+    baza.close()
     return 0
 
 if __name__ == '__main__':
