@@ -7,8 +7,8 @@
 
 def potenga_re(a, n):
     if n == 0:
-    return 1
-    potenga_re(a, n)
+        return 1
+    return potenga_re(a, n-1) * a
     
 def potega_it(a, n):
     wynik = 1
