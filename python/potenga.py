@@ -5,7 +5,7 @@
 #  Obliczanie potęgi liczby naturalnej
 
 
-def potenga_re(a, n):
+def potega_re(a, n):
     if n == 0:
         return 1
     return potenga_re(a, n-1) * a
@@ -20,9 +20,9 @@ def potega_it(a, n):
     return wynik
 
 def main(args):
-    a, n = 3, 0 # wielokrotne przypisanie
+    a, n = 3, 4 # wielokrotne przypisanie
     print("Podstawa {} do potęgi {} wynosi {}".
-           format(a, n, potega_it(a, n))) # wywołanie funkcji
+           format(a, n, potega_re(a, n))) # wywołanie funkcji
 
     return 0
 
