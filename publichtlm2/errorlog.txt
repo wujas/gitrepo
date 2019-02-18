@@ -1,0 +1,6 @@
+[18-Feb-2019 08:16:55 Europe/Warsaw] PHP Warning:  include_once(template.phptemplate.php): failed to open stream: Nie ma takiego pliku ani katalogu in /home/kl2ag2/public_html/index.php on line 9
+[18-Feb-2019 08:16:55 Europe/Warsaw] PHP Warning:  include_once(): Failed opening 'template.phptemplate.php' for inclusion (include_path='.:/usr/share/php') in /home/kl2ag2/public_html/index.php on line 9
+[18-Feb-2019 08:24:49 Europe/Warsaw] PHP Warning:  include_once(template.phptemplate.php): failed to open stream: Nie ma takiego pliku ani katalogu in /home/kl2ag2/public_html/index.php on line 9
+[18-Feb-2019 08:24:49 Europe/Warsaw] PHP Warning:  include_once(): Failed opening 'template.phptemplate.php' for inclusion (include_path='.:/usr/share/php') in /home/kl2ag2/public_html/index.php on line 9
+[18-Feb-2019 08:25:02 Europe/Warsaw] PHP Warning:  include_once(template.phptemplate.php): failed to open stream: Nie ma takiego pliku ani katalogu in /home/kl2ag2/public_html/index.php on line 9
+[18-Feb-2019 08:25:02 Europe/Warsaw] PHP Warning:  include_once(): Failed opening 'template.phptemplate.php' for inclusion (include_path='.:/usr/share/php') in /home/kl2ag2/public_html/index.php on line 9
