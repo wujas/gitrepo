@@ -3,31 +3,69 @@
  */
 
 
-#include <iostream>
 using namespace std;
 
+#include <iostream>
+#include <string.h>
 #define MAKS 100
 
-void szyfruj(char tekst[], int klucz){
+void deszyfruj(char tb[], int klucz){
+    klucz = klucz % 26;
+    int i = 0;
     int kod = 0;
-    for(int i = 0; i < MAKS; i++) {
-        kod = (int)tb[i];
-        if (kod > 96 &7)
+    while (tb[i] != '\0'){
+        kod = (int) tb[i];
+        if (tb[i] == ' ')
+        {
+            ;
+        } else if (kod < 91) {
+            kod -= klucz;
+            if (kod < 65) kod += 26;  
+        } else {
+            kod -= klucz;
+            if (kod < 97) kod += 26;
+        }
+        cout << (char)kod;
+        tb[i]= (char)kod;
+        i++;
     }
+    cout << endl;
+    }
+
+void szyfruj(char tb[], int klucz){
+    klucz = klucz % 26;
+    int kod = 0;
+    int i = 0;
+    while (tb[i] != '\0'){
+        kod = (int) tb[i];
+        if (tb[i] == ' ')
+        {
+            ;
+        } else if (kod < 91) {
+            kod += klucz;
+            if (kod > 90) kod -= 26;  
+        } else {
+            kod += klucz;
+            if (kod > 122) kod -= 26;
+        }
+      
+        cout << (char)kod;
+        tb[i]= (char)kod;
+        i++;
+    }
+    cout << endl;
 }
-
-
 
 int main(int argc, char **argv)
 {
-    char tekst[MAKS];
+	char tekst[MAKS];
     int klucz = 0;
-    cout << "Podaj tekst: ";
+    
+    cout << "Podaj tekst w małych literach: " << endl;
     cin.getline(tekst, MAKS);
     cout << "Podaj klucz: ";
     cin >> klucz;
-    cout << "Szyfr cezara do tekstu: " << endl;
-    szyfruj(tekst, MAKS);
-    return 0;
+    //szyfruj(tekst, klucz);
+    deszyfruj(tekst, klucz);
+	return 0;
 }
-
