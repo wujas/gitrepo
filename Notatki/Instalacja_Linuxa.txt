@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-03-07T07:25:53+01:00
+
+====== Instalacja Linuxa ======
+Created czwartek 07 marca 2019
+
+tablica partycji – forma przechowywania podzielonych częsci dysku
+partycja fat:  jest ograniczona
+partycja GPT
+partycja MBR – część sektorów na dysku twardym w ktorych zapisana jest informacja któr partycja rozruchowa.
+
+Montowanie – dołączenie zasobu dyskowego do struktury plików.
+noatime – nie bedzie zapisywana data aktualizacji.
+Linux – jądro systemu operacyjnego / system operacyjny
+
+
+Open source – idea systemu otwartego i wolnego, Linux jest niekomercyjny
+
+środowisko pulpitu(np. gnome)
