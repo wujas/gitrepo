@@ -5,5 +5,4 @@ CREATE TABLE users (
     email CHAR(40) UNIQUE NOT NULL,
     datad INT NOT NULL
 );
-
 INSERT INTO users VALUES (NULL, 'admin', 'haslo', 'admin@home.net', time());
